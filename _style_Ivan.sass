@@ -1,0 +1,96 @@
+*
+	user-select: none
+
+body
+	position: relative
+	background-color: #514846 !important
+	background-image: url(./src/Ivan/decor-lines.png)
+
+.task-list
+	display: flex
+	flex-wrap: wrap
+	justify-content: center
+	gap: 10px
+	min-width: 90%
+	min-height: 50px
+
+.list-wrapper
+	margin: 20px 0px 20px 0px
+	display: flex
+	width: 90%
+	height: 30px
+
+.text
+	text-align: center
+	height: 30px
+	font-weight: 700
+	font-size: x-large
+
+.delete
+	background: red
+	border-radius: 4px
+	border: 1px solid black
+	cursor: pointer
+	width: 15px
+	height: 15px
+	text-align: center
+
+.task-card
+	display: flex
+	flex-direction: column
+	align-items: center
+	gap: 10px
+	width: 300px
+	height: 400px
+	padding: 20px
+	border-radius: 50px
+	background-color: #DAD3C8
+	filter: drop-shadow(0px 70px 104px rgba(105, 124, 129, 0.10))
+	color: #000
+
+	& > div:first-child
+		text-align: center
+		font-family: "Mulish", sans-serif
+		font-size: 30px
+		font-style: normal
+		font-weight: 600
+		line-height: 50px
+
+	&::before
+		content: ""
+		width: 150px
+		height: 150px
+		border: 50px solid transparent
+		background-repeat: no-repeat
+		border-radius: 297px
+		background: url(./src/Ivan/candidate-interview.png),linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%)
+		background-size: cover
+
+.far
+	position: relative
+
+	&:nth-child(2)
+		z-index: 2
+
+i, input, button
+	cursor: pointer
+	transition: .5s
+
+i:hover, input:hover, button:hover
+	transform: scale(1.1)
+	transition: .2s
+
+i:active, input:active, button:active
+	background: green
+
+.modal
+	position: absolute
+	display: none
+	gap: 20px
+	width: 800px
+	height: 200px
+	background-color: #E9EFF0
+	background-image: url(./src/Ivan/decor-lines.png)
+	border-radius: 20px
+	justify-content: center
+	align-items: center

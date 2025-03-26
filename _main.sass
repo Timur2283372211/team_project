@@ -1,0 +1,56 @@
+@import "mixins", "fonts"
+.container-fluid
+	background: #C4C4C4
+	height: 100vh
+.main
+	height: 100%
+.row
+	height: 100%
+
+.col
+	flex-basis: auto !important
+	height: 100%
+	display: flex
+	justify-content: center
+	align-items: center
+.main-img
+	width: 580px
+.right-container
+	width: 580px
+	height: 722px
+	border-radius: 40px
+	background: #FFF9F9
+	padding: 48px
+	@include flexbox(column)
+.title
+	color: #000
+	text-align: center
+	font-family: Oswald
+	font-size: 36px
+	font-style: normal
+	font-weight: 400
+	line-height: normal
+.text
+	color: #000
+	font-family: "Noto Sans"
+	font-size: 15px
+	font-style: normal
+	font-weight: 400
+	line-height: normal
+.main-btn
+	@include btn
+	border: none
+
+	&:nth-child(4)
+		@include btn(#4CAF50)
+
+	&:nth-child(5)
+		@include btn(#FFD700)
+
+	&:nth-child(6)
+		@include btn(#3498DB)
+
+	&:nth-child(7)
+		@include btn(#2C3E50)
+		color: white
+
