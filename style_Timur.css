@@ -1,0 +1,1081 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;800;900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Ubuntu:wght@100;200;300;400;500;600;700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Actor&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;800;900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap);
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    user-select: none;
+}
+
+body {
+    font-family: 'Great Vibes', handwriting;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: url(./images/moonBG.png), #0A142F;
+    font-family: 'Great Vibes', handwriting;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1600px;
+    height: 1500px;
+    background: #3A3A36;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 1600px;
+    height: 150px;
+    background: #F2EAEA;
+    gap: 800px;
+    box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.2);
+}
+
+.ellipse-group {
+    display: flex;
+    align-self: center;
+    justify-content: start;
+    width: 110px;
+    height: 110px;
+    cursor: pointer;
+}
+
+.ellipse-one {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: rgba(248, 119, 119, 0.50);
+    border-radius: 50%;
+}
+
+.ellipse-two {
+    position: absolute;
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    background: #F87777;
+    border-radius: 50%;
+}
+
+footer .ellipse-one {
+    width: 70px;
+    height: 70px;
+}
+
+footer .ellipse-two {
+    width: 70px;
+    height: 70px;
+}
+
+footer .name {
+    font-size: 50px;
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+}
+
+.left-group {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.leter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0D0D0C;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+footer .leter {
+    font-size: 60px;
+}
+
+.name {
+    color: #0D0D0C;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.lead-text {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-family: 'Roboto', Flex;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-shadow: 5px 5px #558abb;
+}
+
+.lead-text span {
+    color: rgb(208, 158, 127);
+    text-shadow: 5px 5px #3c6183;
+}
+
+.task-list {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    width: 104%;
+    height: 68%;
+    font-size: 34px;
+    font-weight: 800;
+    gap: 13px;
+    padding-left: 2px;
+    border-radius: 2%;
+    border: 5px solid #C4A49F;
+    overflow: hidden;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scrollbar-color: #007 #C4A49F;
+    box-shadow: 5px 5px 5px rgb(55, 2, 91);
+}
+
+.task-list:hover {
+    box-shadow:
+        inset 0 -2em 2em rgb(0 200 0 / 30%),
+        0 0 0 2px white,
+        0.3em 0.3em 1em rgb(200 0 0 / 60%);
+}
+
+.list-wrapper {
+    margin: 20px 0px 20px 0px;
+    display: flex;
+    width: 90%;
+    height: 30px;
+}
+
+.text {
+    text-align: center;
+    height: 30px;
+    font-weight: 700;
+    font-size: x-large;
+}
+
+.delete {
+    background: red;
+    border-radius: 4px;
+    border: 1px solid black;
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+}
+
+.task-row {
+    width: 475px;
+    height: 225px;
+    gap: 20px;
+    border-radius: 8%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.main {
+    padding: 35px 60px 0 25px;
+    margin: 0 auto;
+    width: 1470px;
+    height: 970px;
+    border-radius: 10px;
+    background: rgb(82, 11, 58);
+}
+
+.add-tasks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 70px;
+    border-radius: 0px 9px 9px 0px;
+    background: #5C9967;
+    font-size: 70px;
+    color: white;
+    cursor: pointer;
+}
+
+input[type="time"],
+input[type="date"] {
+    background-color: #ffec80;
+    /* Светло-желтый фон */
+    border: 2px solid #c4a000;
+    /* Золотистая рамка */
+    border-radius: 8px;
+    /* Скругленные углы */
+    padding: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    width: 120px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    outline: none;
+}
+
+input[type="time"]:focus,
+input[type="date"]:focus {
+    border-color: #ffb300;
+    /* Цвет рамки при фокусе */
+    box-shadow: 0px 0px 8px rgba(255, 179, 0, 0.8);
+}
+
+input[type="time"]::-webkit-calendar-picker-indicator,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(40%);
+    width: 18px;
+    height: 18px;
+}
+
+.add-tasks:hover {
+    background: #35dd68;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 80px;
+    margin-top: 30px;
+    width: 1600px;
+    height: 150px;
+    background: #F2EAEA;
+}
+
+.upcom {
+    position: relative;
+    color: #0A142F;
+    text-align: center;
+    font-family: Actor;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+}
+
+.upcom::after {
+    content: "Скопировано!";
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #333;
+    color: #fff;
+    padding: 3px 8px;
+    border-radius: 5px;
+    font-size: 12px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.upcom:hover {
+    color: #77dfff;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.upcom.copied::after {
+    opacity: 1;
+}
+
+.social-medias {
+    display: flex;
+    width: 300px;
+    height: 50px;
+    gap: 20px;
+}
+
+.facebook,
+.github,
+.Linkedin,
+.twitter {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+#languageSelect {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    font-size: 16px;
+    width: 200px;
+    height: 60px;
+    background: #ffec80;
+    border: 4px solid #0B87AC;
+    border-radius: 25px;
+    font-weight: 700;
+    font-size: 20px;
+    color: #9d4e4e;
+    box-shadow: inset 1px 1px 1px #8ff0ac,
+    0.3em 0.3em 1em rgba(1, 255, 255, 0.6);
+}
+
+#languageSelect:hover {
+    box-shadow: inset 1px 1px 1px #3eff78,
+        0.3em 0.3em 1em rgba(251, 229, 34, 0.6);
+    text-shadow: rgb(189, 213, 54) 1px 0 10px;
+}
+
+#languageSelect:active {
+    box-shadow: inset 1px 1px 1px #cc34ff,
+        0.3em 0.3em 1em rgba(96, 45, 249, 0.6);
+}
+
+.facebook:hover,
+.github:hover,
+.Linkedin:hover,
+.twitter:hover {
+    box-shadow: inset 0 -3em 3em rgba(5, 255, 243, 0.3),
+        0 0 0 2px rgb(0, 0, 0),
+        0.3em 0.3em 1em rgba(1, 255, 255, 0.6);
+    transition: 1s;
+}
+
+.task, .task-modal {
+    text-align: center;
+    width: 250px;
+    height: 70px;
+    border-radius: 3px;
+    border: 1px solid rgba(177, 177, 177, 0.40);
+    background: #DBE2EF;
+    color: #7B7B7B;
+    font-size: 20px;
+}
+
+.task:hover, .task-modal:hover {
+    box-shadow:
+        inset 0 -3em 3em rgba(0, 65, 185, 0.3),
+        0 0 0 2px white,
+        0.3em 0.3em 1em rgb(200 0 0 / 60%);
+}
+
+.title-day-week {
+    color: #F87777;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.title-date-calendar {
+    color: #fe9e9e;
+    font-family: Roboto;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+.tasks-gear {
+    display: inline;
+    width: 970px;
+    height: 700px;
+    background: rgb(82, 11, 58);
+}
+
+.about-task {
+    text-align: center;
+    width: 550px;
+    height: 70px;
+    border-radius: 3px;
+    border: 1px solid rgba(177, 177, 177, 0.40);
+    background: #DBE2EF;
+    color: #7B7B7B;
+    font-size: 20px;
+}
+
+.about-task:hover {
+    box-shadow:
+        inset 0 -3em 3em rgba(0, 65, 185, 0.3),
+        0 0 0 2px white,
+        0.3em 0.3em 1em rgb(200 0 0 / 60%);
+}
+
+.calendar-gear {
+    width: 500px;
+    height: 700px;
+    background: rgb(82, 11, 58);
+}
+
+.calendar {
+    text-align: center;
+    width: 470px;
+    height: 500px;
+    background: #acacac;
+    border-radius: 20px;
+    box-shadow: 10px 5px 5px rgb(111, 96, 83);
+}
+
+.calendar:hover {
+    box-shadow:
+        inset 0 -4em 4em rgba(200, 143, 0, 0.3),
+        0.3em 0.3em 1em rgb(200 0 0 / 60%);
+}
+
+.section-one {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    width: 1470px;
+    height: 700px;
+    background: #ca22f4;
+}
+
+.achieves {
+    display: flex;
+    width: 1470px;
+    height: 250px;
+    background: rgb(82, 11, 58);
+    gap: 30px;
+}
+
+.completed-tasks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    width: 250px;
+    height: 215px;
+    background: #F0D1A8;
+    border-radius: 40px;
+    color: #3A3A36;
+    text-align: center;
+    font-family: Inter;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    box-shadow: 10px 5px 5px rgb(68, 79, 85);
+}
+
+.completed-tasks span {
+    font-size: 70px;
+}
+
+.pending-tasks {
+    display: flex;
+    padding: 6px 14.317px 5px 15px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    width: 220px;
+    height: 215px;
+    background: #C4A49F;
+    border-radius: 40px;
+    color: #201713;
+    text-align: center;
+    font-family: Inter;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    box-shadow: 10px 5px 5px rgb(99, 77, 77);
+}
+
+.pending-tasks span {
+    font-size: 70px;
+}
+
+.created-tasks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    width: 400px;
+    height: 230px;
+    background: white;
+    border-radius: 40px;
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.25);
+    color: #0B87AC;
+    text-align: center;
+    font-family: Inter;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    box-shadow: 10px 5px 5px rgb(218, 205, 164);
+}
+
+.created-tasks span {
+    color: #000;
+    font-size: 90px;
+}
+
+i {
+    cursor: pointer;
+}
+
+.modal {
+    position: fixed;
+    left: center;
+    top: center;
+    transform: translate(50%, -50%);
+    display: none;
+    width: 800px;
+    height: 400px;
+    background: #d87e7e;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    gap: 5px;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    font-size: 50px;
+    box-shadow:
+        0 0 0 2px white,
+        0.3em 0.3em 1em rgb(200 0 0 / 60%);
+    z-index: 1;
+}
+
+.change-btn{
+    background: #F87777;
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+    width: 100px;
+    height: 70px;
+    font-size: 30px;
+    border-radius: 20px;
+    box-shadow:
+        inset 0 -1em 1em rgba(247, 134, 20, 0.3),
+        0 0 0 2px white,
+        0.3em 0.3em 1em rgb(200 0 0 / 60%);
+}
+
+.close-icon{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 2px;
+    left: 2px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.close-icon:hover{
+    width: 110px;
+    height: 110px;
+    transition: 1s;
+}
+
+.set-category-priority{
+    display: flex;
+    width: 500px;
+    height: 60px;
+    gap: 40px;
+}
+
+#category{
+    width: 300px;
+    height: 70%;
+    border-radius: 15px;
+    background: #1eff9a;
+    font-size: 25px;
+    color: #0A142F;
+    box-shadow:
+        inset 0 -1em 1em rgba(255, 128, 0, 0.3),
+        0.3em 0.3em 1em rgb(200 0 0 / 60%);
+}
+
+#category:hover{
+    box-shadow:
+        inset 0 -1em 1em rgba(238, 255, 0, 0.3),
+        0.3em 0.3em 1em rgba(29, 239, 116, 0.6);
+}
+
+#priority{
+    width: 300px;
+    height: 70%;
+    border-radius: 15px;
+    background: #d4ff17;
+    font-size: 25px;
+    color: #0A142F;
+    box-shadow:
+        inset 0 -1em 1em rgba(255, 128, 0, 0.3),
+        0.3em 0.3em 1em rgb(200 0 0 / 60%);
+}
+
+#priority:hover{
+    box-shadow:
+        inset 0 -1em 1em rgba(238, 255, 0, 0.3),
+        0.3em 0.3em 1em rgba(29, 239, 116, 0.6);
+}
+
+.task-row {
+    gap: 20px;
+    background: #F0D1A8;
+}
+
+.card-content {
+    flex: 1;
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.icon {
+    cursor: pointer;
+    font-size: 20px;
+    color: #4b4b4b;
+}
+
+.element-task{
+    font-size: 40px;
+}
+
+.about-element-task{
+    color: #5C5C57E5;
+    font-size: 20px;
+}
+
+.deadline{
+    font-size: 30px;
+}
+
+.create-gear {
+    display: flex;
+    width: 970px;
+    height: 90px;
+    gap: 15px;
+}
+
+.date {
+    width: 80px;
+    height: 50px;
+    background: rgb(255, 219, 74);
+}
+
+.date:hover {
+    box-shadow:
+        inset 0 -3em 3em rgb(0 200 0 / 30%),
+        0 0 0 2px white,
+        0.3em 0.3em 1em rgb(200 0 0 / 60%);
+}
+
+.time {
+    width: 80px;
+    height: 50px;
+    background: rgb(255, 219, 74);
+}
+
+.time:hover {
+    box-shadow:
+        inset 0 -3em 3em rgb(0 200 0 / 30%),
+        0 0 0 2px white,
+        0.3em 0.3em 1em rgb(200 0 0 / 60%);
+}
+
+.month {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    font-size: 40px;
+    background: rgb(252, 205, 136);
+    border-radius: 10px;
+}
+
+
+.day-header,
+.week-number,
+td {
+    width: 52px;
+    height: 52px;
+    border-radius: 8px;
+    font-size: 25px;
+}
+
+
+.week-number:hover,
+.day-header:hover,
+td:hover {
+    background: #F87777;
+    transition: 0.8s;
+    user-select: none;
+}
+
+td {
+    text-align: center;
+    background: #ffff99;
+}
+
+.empty {
+    visibility: hidden;
+}
+
+.highlight {
+    background: rgb(145, 0, 0) !important;
+    color: darkgray;
+}
+
+table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.day-header {
+    background: #96bb6b;
+}
+
+.week-number {
+    background: #333333;
+    color: darkgray;
+}
+
+input {
+    font-size: 20px;
+}
+
+.day-number {
+    background: #bfc467;
+    cursor: pointer;
+}
+
+.search-gear {
+    display: flex;
+    justify-content: space-around;
+    margin-top: -10px;
+}
+
+.sort-category {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 40px;
+    background: #F0D1A8;
+    font-size: 28px;
+    border-radius: 20px;
+    cursor: pointer;
+    border: 2px solid #0B87AC;
+}
+
+.sort-priority {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 40px;
+    background: #F0D1A8;
+    font-size: 28px;
+    border-radius: 20px;
+    cursor: pointer;
+    border: 2px solid #0B87AC;
+}
+
+.sort-category img,
+.sort-priority img {
+    width: 25px;
+    height: 25px;
+}
+
+.local-clear {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 40px;
+    background: #ffdcaf;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 25px;
+    border: 2px solid #fd8e0e;
+}
+
+.search-container {
+    position: relative;
+    display: inline-block;
+}
+
+.search-input {
+    width: 150px;
+    padding: 10px 35px 10px 10px;
+    /* Отступ для иконки справа */
+    border: 2px solid #e5c9a9;
+    border-radius: 10px;
+    font-size: 14px;
+    outline: none;
+    color: rgba(0, 109, 119, 0.40);
+}
+
+.searchBtn img {
+    width: 30px;
+    height: 40px;
+}
+
+.search-input:hover {
+    box-shadow:
+        inset 0 -3em 3em rgb(0 200 0 / 30%),
+        0 0 0 2px white,
+        0.3em 0.3em 1em rgb(200 0 0 / 60%);
+}
+
+.searchBtn {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #5a4033;
+    /* Цвет иконки */
+}
+
+.modal-reload {
+    display: none;
+    position: fixed;
+    width: 500px;
+    height: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #2b0000;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    font-size: 50px;
+    box-shadow:
+        0 0 0 2px white,
+        0.3em 0.3em 1em rgb(200 0 0 / 60%);
+    z-index: 1;
+}
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-reload button {
+    background: #F87777;
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+    width: 100px;
+    height: 70px;
+    font-size: 30px;
+    border-radius: 20px;
+    box-shadow:
+        inset 0 -1em 1em rgba(247, 134, 20, 0.3),
+        0 0 0 2px white,
+        0.3em 0.3em 1em rgb(200 0 0 / 60%);
+}
+
+.modal-reload #close {
+    width: 200px;
+}
+
+.modal-reload p {
+    font-size: 50px;
+    color: #ff9d00;
+}
+
+.photo {
+    border-radius: 10px;
+    border: 2px solid #ca22f4;
+}
+
+.photo:hover {
+    box-shadow:
+        inset 0 -1em 1em rgba(247, 134, 20, 0.3),
+        0.3em 0.3em 1em rgb(200 0 0 / 60%);
+}
+
+/* Оновлений стиль для task-row */
+.task-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    background: #F0D1A8;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.task-row:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Стилі для заголовка завдання */
+.element-task {
+    font-size: 40px;
+    font-weight: 600;
+    color: #3A3A36;
+    margin: 0;
+    word-break: break-word;
+}
+
+/* Стилі для опису завдання */
+.about-element-task {
+    font-size: 27px;
+    color: #5C5C57;
+    margin: 0;
+    line-height: 1.4;
+    word-break: break-word;
+}
+
+/* Стилі для дедлайну */
+.deadline {
+    font-size: 25px;
+    font-weight: 500;
+    color: #5C5C57;
+    margin-top: 50px;
+}
+
+/* Контейнер для бейджів категорії та пріоритету */
+.badges {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 0 15px;
+    width: 110px;
+}
+
+/* Загальні стилі для бейджів */
+.category-badge, 
+.priority-badge {
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    text-transform: capitalize;
+}
+
+/* Стилі для бейджа категорії */
+.category-badge {
+    background-color: #6c757d;
+}
+
+/* Стилі для бейджів пріоритету */
+.priority-badge {
+    background-color: #ff4d4d; /* За замовчуванням для urgently-important */
+}
+
+.priority-badge[data-priority="urgently-notimportant"] {
+    background-color: #ff9999;
+}
+
+.priority-badge[data-priority="noturgently-important"] {
+    background-color: #4da6ff;
+}
+
+.priority-badge[data-priority="noturgent-notimportant"] {
+    background-color: #99ccff;
+}
+
+/* Контейнер для іконок */
+.icons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+/* Загальні стилі для іконок */
+.icons i {
+    cursor: pointer;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.icons i:hover {
+    transform: scale(1.2);
+}
+
+/* Стилі для конкретних іконок */
+.fa-check {
+    color: #28a745;
+}
+
+.fa-check:hover {
+    color: #218838;
+}
+
+.fa-edit {
+    color: #17a2b8;
+}
+
+.fa-edit:hover {
+    color: #138496;
+}
+
+.fa-window-close {
+    color: #dc3545;
+}
+
+.fa-window-close:hover {
+    color: #c82333;
+}
+
+.fa-reply {
+    color: #ffc107;
+}
+
+.fa-reply:hover {
+    color: #e0a800;
+}
+
+.task-list::-webkit-scrollbar {
+    width: 8px;
+}
+
+.task-list::-webkit-scrollbar-track {
+    background: #F0D1A8;
+    border-radius: 10px;
+}
+
+.task-list::-webkit-scrollbar-thumb {
+    background-color: #F87777;
+    border-radius: 10px;
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vista Lab</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+    <link rel="shortcut icon" href="./images/website_5240427.png" type="image/x-icon">
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="left-group">
+          <div class="ellipse-group">
+            <div class="ellipse-one"></div>
+            <div class="ellipse-two">
+              <div class="leter">v</div>
+            </div>
+          </div>
+          <div class="name">Vista Lab</div>
+        </div>
+        <select id="languageSelect" class="language-select">
+          <option value="ua">Українська</option>
+          <option value="en">English</option>
+          <option value="de">Deutsch</option>
+        </select>
+      </header>
+      <div class="lead-text">Hello, Aqeel , <span>Start planning today</span></div>
+      <div class="main">
+        <div class="modal-overlay" id="modalOverlay"></div>
+        <div class="modal-reload" id="myModal"><p>Ви хочете продовжити? <br> вся історія буде видалена!</p>
+          <button onclick="confirmAction()">ОК</button>
+          <button onclick="cancelAction()" id="close">Відмінити</button>
+        </div>
+        <div class="section-one">
+          <div class="calendar-gear">
+            <div class="title-day-week">Data</div>
+            <div class="title-date-calendar">Day, Month Year</div>
+            <div class="calendar">
+              <div class="month">Month</div>
+              <table>
+                <tr>
+                  <td class="empty"></td>
+                  <td class="day-header">Mo</td>
+                  <td class="day-header">Tu</td>
+                  <td class="day-header">We</td>
+                  <td class="day-header">Th</td>
+                  <td class="day-header">Fr</td>
+                  <td class="day-header">Sa</td>
+                  <td class="day-header">Su</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="modal">
+            <img src="./images/close_7448096.png" class="close-icon" alt="">
+            <div class="modal-content">
+              <input type="text" class="task-modal" placeholder="type Title of task"/>
+              <input type="text" class="about-task" placeholder="Detail of your task"/>
+            </div>
+            <div class="modal-time">
+              <input type="time" class="time-modal"/>
+              <input type="date" class="date-modal"/>
+            </div>
+            <button class="change-btn">ОК</button>
+          </div>
+          <div class="tasks-gear">
+            <div class="create-gear">
+              <input type="text" class="task" maxlength="20" placeholder="type Title of task"/>
+              <input type="text" class="about-task" maxlength="40" placeholder="Detail of your task"/>
+              <button class="add-tasks">+</button>
+              <input type="time" class="time" />
+              <input type="date" class="date" />
+            </div>
+            <div class="set-category-priority">
+              <select id="category">
+                <option value="question">question</option>
+                <option value="job">job</option>
+                <option value="goal">goal</option>
+                <option value="homework">homework</option>
+              </select>
+              <select id="priority">
+                <option value="urgently-important">urgently-important</option>
+                <option value="urgently-notimportant">urgently-not important</option>
+                <option value="noturgently-important">not urgently-important</option>
+                <option value="noturgent-notimportant">not urgent-not important</option>
+              </select>
+            </div>
+            <div class="search-gear">
+              <div class="sort-category">By category
+                <img src="./images/sortLogo.svg" alt="" />
+              </div>
+              <div class="sort-priority">By priority
+                <img src="./images/sortLogo.svg" alt="" />
+              </div>
+              <div class="local-clear">clear localStorage</div>
+              <div class="search-container">
+                <input class="search-input" placeholder="Search by name" />
+                <button class="searchBtn">
+                  <img src="./images/search-9202443.svg" alt="" />
+                </button>
+              </div>
+            </div>
+            <div class="task-list"></div>
+          </div>
+        </div>
+        <div class="achieves">
+          <div class="completed-tasks"> COMPLETED <br/> TASKS <br/><span>0</span></div>
+          <div class="pending-tasks">PENDING TASKS <br /><span>0</span></div>
+          <div class="created-tasks"> Tasks created <br /><span>0</span></div>
+          <img src="./images/5 (1).svg" alt="" class="photo">
+        </div>
+      </div>
+      <footer>
+        <div class="left-group">
+          <div class="ellipse-group">
+            <div class="ellipse-one"></div>
+            <div class="ellipse-two">
+              <div class="leter">v</div>
+            </div>
+          </div>
+          <div class="name">Vista Lab</div>
+        </div>
+        <div class="upcom" id="copyText">© 2024 Aqeel Shahzad. All Rights Reserved.</div>
+        <div class="social-medias">
+          <img src="./images/Facebook Icon (1).svg" alt="" class="facebook" />
+          <img src="./images/Linkedin Icon (1).svg" alt="" class="Linkedin" />
+          <img src="./images/Twitter Icon (1).svg" alt="" class="twitter" />
+          <img src="./images/github Icon.svg" alt="" class="github" />
+        </div>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
