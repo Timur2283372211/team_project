@@ -5,6 +5,7 @@ body
 	display: flex
 	flex-direction: column
 	align-items: center
+	gap: 20px
 	
 	position: relative
 	background-color: #514846 !important
@@ -78,9 +79,10 @@ body
 	&:nth-child(2)
 		z-index: 2
 
-i, input, button
+input, button
 	cursor: pointer
 	transition: .5s
+	width: 300px
 
 i:hover, input:hover, button:hover
 	transform: scale(1.1)
@@ -103,7 +105,7 @@ i:active, input:active, button:active
 
 
 .list-title
-	width: 150px
+	width: 300px
 	height: 68px
 	background-color: rgb(27, 18, 18)
 	color: white

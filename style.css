@@ -166,6 +166,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 20px;
   position: relative;
   background-color: #514846 !important;
   background-image: url(./src/Ivan/decor-lines.png);
@@ -244,9 +245,10 @@ body {
   z-index: 2;
 }
 
-i, input, button {
+input, button {
   cursor: pointer;
   transition: 0.5s;
+  width: 300px;
 }
 
 i:hover, input:hover, button:hover {
@@ -272,7 +274,7 @@ i:active, input:active, button:active {
 }
 
 .list-title {
-  width: 150px;
+  width: 300px;
   height: 68px;
   background-color: rgb(27, 18, 18);
   color: white;
