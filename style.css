@@ -163,6 +163,9 @@ input {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: relative;
   background-color: #514846 !important;
   background-image: url(./src/Ivan/decor-lines.png);
@@ -182,6 +185,7 @@ body {
   display: flex;
   width: 90%;
   height: 30px;
+  width: 118px;
 }
 
 .text {
@@ -224,13 +228,13 @@ body {
 }
 .task-card::before {
   content: "";
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   border: 50px solid transparent;
-  background-repeat: no-repeat;
   border-radius: 297px;
-  background: url(./src/Ivan/candidate-interview.png), linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0) 100%);
+  background: url(./src/Ivan/candidate-interview.png);
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .far {
@@ -265,4 +269,16 @@ i:active, input:active, button:active {
   border-radius: 20px;
   justify-content: center;
   align-items: center;
+}
+
+.list-title {
+  width: 150px;
+  height: 68px;
+  background-color: rgb(27, 18, 18);
+  color: white;
+  border-radius: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 68px;
 }/*# sourceMappingURL=style.css.map */
