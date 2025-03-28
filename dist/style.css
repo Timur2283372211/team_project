@@ -1,0 +1,291 @@
+@import url(https://fonts.googleapis.com/css2?family=Oswald:wght@100;200;300;400;500;600;700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700&display=swap);
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+@import url(https://fonts.googleapis.com/css2?family=Oswald:wght@100;200;300;400;500;600;700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700&display=swap);
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+.fonts {
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
+  font-family: "Mulish", sans-serif;
+}
+
+.container-fluid {
+  background: #C4C4C4;
+  height: 100vh;
+}
+
+.main {
+  height: 100%;
+}
+
+.row {
+  height: 100%;
+}
+
+.col {
+  flex-basis: auto !important;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-img {
+  width: 580px;
+}
+
+.right-container {
+  width: 580px;
+  height: 722px;
+  border-radius: 40px;
+  background: #FFF9F9;
+  padding: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 30px;
+}
+
+.title {
+  color: #000;
+  text-align: center;
+  font-family: Oswald;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.text {
+  color: #000;
+  font-family: "Noto Sans";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.main-btn {
+  width: 382px;
+  height: 40px;
+  border-radius: 10px;
+  background: #76DE37;
+  border: none;
+}
+
+.main-btn:nth-child(4) {
+  width: 382px;
+  height: 40px;
+  border-radius: 10px;
+  background: #4CAF50;
+}
+
+.main-btn:nth-child(5) {
+  width: 382px;
+  height: 40px;
+  border-radius: 10px;
+  background: #FFD700;
+}
+
+.main-btn:nth-child(6) {
+  width: 382px;
+  height: 40px;
+  border-radius: 10px;
+  background: #3498DB;
+}
+
+.main-btn:nth-child(7) {
+  width: 382px;
+  height: 40px;
+  border-radius: 10px;
+  background: #2C3E50;
+  color: white;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: none;
+}
+
+footer, header, nav, section, main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+.fonts {
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
+  font-family: "Mulish", sans-serif;
+}
+
+* {
+  user-select: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+  background-color: #514846 !important;
+  background-image: url(./src/Ivan/decor-lines.png);
+}
+
+.task-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  min-width: 90%;
+  min-height: 50px;
+}
+
+.list-wrapper {
+  margin: 20px 0px 20px 0px;
+  display: flex;
+  width: 90%;
+  height: 30px;
+  width: 118px;
+}
+
+.text {
+  text-align: center;
+  height: 30px;
+  font-weight: 700;
+  font-size: x-large;
+}
+
+.delete {
+  background: red;
+  border-radius: 4px;
+  border: 1px solid black;
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+  text-align: center;
+}
+
+.task-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 300px;
+  height: 400px;
+  padding: 20px;
+  border-radius: 50px;
+  background-color: #DAD3C8;
+  filter: drop-shadow(0px 70px 104px rgba(105, 124, 129, 0.1));
+  color: #000;
+}
+
+.task-card > div:first-child {
+  text-align: center;
+  font-family: "Mulish", sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 50px;
+}
+
+.task-card::before {
+  content: "";
+  width: 200px;
+  height: 200px;
+  border: 50px solid transparent;
+  border-radius: 297px;
+  background: url(./src/Ivan/candidate-interview.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.far {
+  position: relative;
+}
+
+.far:nth-child(2) {
+  z-index: 2;
+}
+
+input, button {
+  cursor: pointer;
+  transition: .5s;
+  width: 300px;
+}
+
+i:hover, input:hover, button:hover {
+  transform: scale(1.1);
+  transition: .2s;
+}
+
+i:active, input:active, button:active {
+  background: green;
+}
+
+.modal {
+  position: absolute;
+  display: none;
+  gap: 20px;
+  width: 800px;
+  height: 200px;
+  background-color: #E9EFF0;
+  background-image: url(./src/Ivan/decor-lines.png);
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-title {
+  width: 300px;
+  height: 68px;
+  background-color: #1b1212;
+  color: white;
+  border-radius: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 68px;
+}
+
+/*# sourceMappingURL=style.css.map */

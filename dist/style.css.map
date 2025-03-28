@@ -1,0 +1,1 @@
+{"version":3,"names":[],"mappings":"","sources":["style.sass"],"sourcesContent":["@import \"main\", \"mixins\", \"variables\", \"reset\", \"fonts\", \"style_Ivan\"\r\n\r\n"],"file":"style.css"}
